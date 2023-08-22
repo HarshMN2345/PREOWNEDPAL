@@ -1,0 +1,7 @@
+<div>
+  <div *ngFor="let listing of listings">
+    <ul>
+       <li> <a routerLink="/listings/{{listing.id}}">{{listing.name}}-₹{{listing.price}}</a></li>
+    </ul>
+  </div>
+</div>

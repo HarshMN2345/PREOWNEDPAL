@@ -1,0 +1,19 @@
+<div class="listing-section">
+  <div class="product" *ngIf="listing">
+    <div class="image-box">
+      <div class="images" id="image-1"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">{{ listing?.name }}</h2>
+      <h3 class="price">${{ listing?.price }}</h3>
+      <p class="description">{{ listing?.description }}</p>
+      <label for="item-1-quantity">Quantity:</label>
+      <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+      <a routerLink="/listings">
+        <button type="button" name="item-1-button" id="item-1-button">Back</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+
