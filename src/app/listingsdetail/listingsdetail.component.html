@@ -1,7 +1,7 @@
 <div class="listing-section">
   <div class="product" *ngIf="listing">
     <div class="image-box">
-      <div class="images" id="image-1"></div>
+      <div class="images" [id]="'image-' + listing.id"></div>
     </div>
     <div class="text-box">
       <h2 class="item">{{ listing?.name }}</h2>

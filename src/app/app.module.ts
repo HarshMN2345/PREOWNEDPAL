@@ -7,6 +7,9 @@ import { HeaderComponent } from './header/header.component';
 import { ListingsPageComponent } from './listings-page/listings-page.component';
 import { ListingsdetailComponent } from './listingsdetail/listingsdetail.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { FormsModule } from '@angular/forms';
+import { MyListingComponent } from './my-listing/my-listing.component';
+import { NewListingComponent } from './new-listing/new-listing.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     HeaderComponent,
     ListingsPageComponent,
     ListingsdetailComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    MyListingComponent,
+    NewListingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,21 @@
+
+<div class="listing-section">
+  <div class="product" *ngFor="let listing of listings">
+    <div class="image-box">
+      <div class="images" [id]="'image-' + listing.id"></div>
+    </div>
+    <div class="text-box">
+      <h2 class="item">{{ listing.name }}</h2>
+      <h3 class="price">${{ listing.price }}</h3>
+      <p class="description">{{ listing.description }}</p>
+      <input type="text" name="item-1-quantity" id="item-1-quantity" value="1">
+      <a routerLink="/edit-listing/{{listing.id}}">
+        <button type="button" name="item-1-button" id="item-1-button">Edit</button>
+      </a>
+      <button (click)="onDeleteClick(listing.id,listing.name)">Delete</button>
+    </div>
+  </div>
+  <a routerLink="/new-listing">
+    <button type="button" name="item-1-button" id="item-1-button">Add New Listing</button>
+  </a>
+</div>
